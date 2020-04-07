@@ -18,7 +18,7 @@ Cutoff를 사용하여 에러를 제거하고 전체적인 slope를 Gain화시�
 61 window size를 가지는 median filter를 돌려서 Impulse성 노이즈들을 제거하려고 하였다.
 그러나 window 내에 impulse가 여러개가 있을 경우 데이터인 구형파마저 없어지는 현상을 보이고 있다. - 수정이 필요함
 
-## Title
+## List
 * [2020/4/7 - 구형파 Filtering]()
 
 ## Log
