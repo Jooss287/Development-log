@@ -28,7 +28,7 @@ D:\PycharmProjects> django-admin startproject <Project name>
 ```
 cd 명령어를 사용하여 C:\Users\PC_id 에서 D:\PycharmProjects로 이동한 뒤 project를 생성한다.  
 실제로 프로젝트 폴더에 생성된것을 확인 할 수 있다.  
-![생성된 프로젝트 확인](img/create_django_project.PNG)
+![생성된 프로젝트 확인](img/create_django_project.PNG)  
 프로젝트 내에 Django에서 생성해주는 기본 파일들이 있고 그 파일들을 이용하여 웹 서버를 구성 할 수  있다.
 기본 생성되는 파일들의 기능들을 살펴보자.  
 > manage.py - Django와 상호작용 하는 커맨드라인 유틸리티 [공식문서링크](https://docs.djangoproject.com/ko/3.0/ref/django-admin/)  
@@ -42,7 +42,7 @@ cd 명령어를 사용하여 C:\Users\PC_id 에서 D:\PycharmProjects로 이동�
 python manage.py startapp <application_name>
 ```
 어플리케이션의 view 페이지를 만들어준다. 실질적으로 url을 통해서 리턴을 받을 수 있도록 코드를 작성한다.
-```buildoutcfg
+```
 polls/views.py
 from django.http import HttpResponse
 

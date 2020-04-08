@@ -30,3 +30,9 @@ Reference signal과 Raw signal을 비교하여 Raw에 어떠한 offset을 가지
 구형파(사각파)는 ~~수식~~ 으로 이루어져 있다. ```2k-1```의 주파수비율로 무한대 개수의 sin 파형이 존재하므로 완벽한 파형 제거가 불가능하다.  
 * low pass filtering을 진행하고 감쇄율이 적용된 값을 사용하여 보정 할 수 있도록 한다.
 * Filter만을 사용하는 것이 아니라 cutoff 도 좋은 방법이 될 수 있다. 두가지를 조합하여 사용하자.
+
+### 2020/4/8
+Python scipy를 사용하여 filter를 생성 한 후 filter coefficient와 데이터를 Convolution 시켰다.
+여기서 Filter를 Convolution시킬 때 아래 그림과 같이 하는것이 원칙이지만, filter size가 홀수일 경우에 필터가 대칭을 이루게 된다.
+대칭을 이용하면 조금 더 쉽게 코드를 짤 수 있다. 
+![Convolution](img/Convolution.png)  
