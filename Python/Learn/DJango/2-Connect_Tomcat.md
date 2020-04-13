@@ -18,12 +18,17 @@ JSP, ASP, PHP 등의 동적 데이터를 톰캣에서 처리한다.
 ![아파치 톰캣 비교](img/apache_vs_tomcat.png)
 
 ### Reference
-[아파치 톰캣이란?](https://wodonggun.github.io/wodonggun.github.io/study/%EC%95%84%ED%8C%8C%EC%B9%98-%ED%86%B0%EC%BA%A3-%EC%B0%A8%EC%9D%B4.html)
-[참고 자료](https://twiceagain.tistory.com/4)  
-[아파치와 톰캣의 차이](https://limmmee.tistory.com/4)  
-[WAS 구현](https://doitnow-man.tistory.com/111?category=726138)
+* [아파치 톰캣이란?](https://wodonggun.github.io/wodonggun.github.io/study/%EC%95%84%ED%8C%8C%EC%B9%98-%ED%86%B0%EC%BA%A3-%EC%B0%A8%EC%9D%B4.html)
+* [참고 자료](https://twiceagain.tistory.com/4)  
+* [아파치와 톰캣의 차이](https://limmmee.tistory.com/4)  
+* [WAS 구현](https://doitnow-man.tistory.com/111?category=726138)
+* [아파치 설치과정 정리](https://jimnong.tistory.com/612)  
+* [자바 JDK 설치](https://changun516.tistory.com/16)  
+* [윈도우에 JDK 8 설치하기](https://offbyone.tistory.com/11)  
+* [자바 JDK,JRE 설치하기](https://kamang-it.tistory.com/entry/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%85%8B%ED%8C%85%ED%95%98%EA%B8%B0%EC%9E%90%EB%B0%94JDKJRE-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B01)
 
-# Apache 설치
+
+## Apache 설치
 1. 아파치 최신버전을 아래 링크에서 다운받는다.
 https://www.apachelounge.com/download/
 2. 아파치 최신버전은 VS16을 기반으로 되어 있으므로 VS16 재배포패키지를 먼저 설치해준다.
@@ -76,8 +81,29 @@ https://www.apachelounge.com/download/
    아파치 저비스 제거 <httpd.exe -k uninstall> or <httpd.exe -k unstall -n 서비스이름>
    ```
 
+## Tomcat 설치
+톰캣은 JRE를 필요로 한다.
+JRE(Java Runtime Environment)는 컴파일하여 인코딩 된 자바 코드를 인터프리터로 다시 읽어서 실행시키는 역할을 하는 패키지다.
+자바로 코딩된 프로그램을 실행시키기 위한 실행환경으로 볼 수 있다.
+이 JRE는 JDK(Java Development Kit)에 속해 있어 JDK를 다운받아서 설치 할 때 자동으로 설치된다.
 
-[아파치 설치과정 정리](https://jimnong.tistory.com/612)
-
-
-
+1. JRE 설치  
+    [오라클](https://www.oracle.com/technetwork/java/javase/overview/index.html)
+    홈페이지에서 JAVA SE 14버전의 JDK를 받아 설치한다.
+    설치 경로의 변경이 없다면 next만 누르면 설치 할 수 있다.
+2. JDK 환경변수 설정  
+    JRE는 특별한 환경 설정 없이 바로 콘솔에서 사용 할 수 있다.
+    톰캣만을 사용한다면 JRE만 있어도 되지만 다른 자바환경을 위해 설치 할 때 JDK환경설정을 미리 해 둔다.  
+    제어판 - 시스템 - 고급 시스템 설정 - 환경변수  
+    시스템 변수의 새로만들기에서 아래와 같이 적어준다.
+    설치 경로를 변경했다면 변경한 주소로 적어준다.  
+    ![자바 환경설정](img/java_environment.PNG)  
+    또한 시스템 변수의 path변수를 더블클릭하여 아래의 사진과 같이 입력하면 환경변수 설정은 끝.  
+    ![자바 환경설정2](img/java_environment2.PNG)
+3. 톰캣 설치  
+    [톰캣 홈페이지](http://tomcat.apache.org/)
+    에서 최신버전의 톰캣을 다운받는다.
+    톰캣은 개발자용으로 된 zip 버전과 release버전으로 구성된 installer버전이 있다.
+    개발 할 시에는 zip으로 쓰다가 서버구동을 할 때 installer버전을 사용한다.  
+    톰캣 압축파일을 받아서 bin\startup.bat 파일을 더블클릭하고 생긴 명령프롬프트 창에서 생긴 8080포트를 확인하면 실행이 완료된 것이다.  
+    [로컬 페이지](http://localhost:8080/)에서 톰캣 페이지가 나온다면 정상적으로 실행 된 것이다.
