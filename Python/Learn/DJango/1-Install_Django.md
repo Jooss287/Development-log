@@ -31,10 +31,10 @@ cd 명령어를 사용하여 C:\Users\PC_id 에서 D:\PycharmProjects로 이동�
 ![생성된 프로젝트 확인](img/create_django_project.PNG)  
 프로젝트 내에 Django에서 생성해주는 기본 파일들이 있고 그 파일들을 이용하여 웹 서버를 구성 할 수  있다.
 기본 생성되는 파일들의 기능들을 살펴보자.  
-> manage.py - Django와 상호작용 하는 커맨드라인 유틸리티 [공식문서링크](https://docs.djangoproject.com/ko/3.0/ref/django-admin/)  
-> settings.py - Django 프로젝트의 환경 및 구성 저장 [공식문서링크](https://docs.djangoproject.com/ko/3.0/topics/settings/)
-> urls.py - Django project의 URL 선언 저장 [공식문서링크](https://docs.djangoproject.com/ko/3.0/topics/http/urls/)
-> wsgi.py - 현재 프로젝트를 서비스하기 위한 WSGI 호환 웹 서버 진입점 [공식문서링크](https://docs.djangoproject.com/ko/3.0/howto/deployment/wsgi/)
+> manage.py - Django와 상호작용 하는 커맨드라인 유틸리티 [공식문서링크](https://docs.djangoproject.com/ko/3.0/ref/django-admin/)    
+> settings.py - Django 프로젝트의 환경 및 구성 저장 [공식문서링크](https://docs.djangoproject.com/ko/3.0/topics/settings/)  
+> urls.py - Django project의 URL 선언 저장 [공식문서링크](https://docs.djangoproject.com/ko/3.0/topics/http/urls/)  
+> wsgi.py - 현재 프로젝트를 서비스하기 위한 WSGI 호환 웹 서버 진입점 [공식문서링크](https://docs.djangoproject.com/ko/3.0/howto/deployment/wsgi/)  
 
 #### 설문조사 앱 만들기
 설문조사 어플리케이션을 만들기 위해 프로젝트 내에 어플리케이션을 생성한다.

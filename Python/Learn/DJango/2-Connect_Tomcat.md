@@ -77,7 +77,7 @@ https://www.apachelounge.com/download/
 8. 추가 명령어
     ```
    아파치 종료 <httpd -k stop>
-   아파치 서비스 재시작 <http.exe -k restart>
+   아파치 서비스 재시작 <httpd.exe -k restart>
    아파치 저비스 제거 <httpd.exe -k uninstall> or <httpd.exe -k unstall -n 서비스이름>
    ```
 
